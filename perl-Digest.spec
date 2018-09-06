@@ -42,9 +42,6 @@ make it easy to change algorithms later.
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
-%check
-%make test
-
 %install
 %makeinstall_std
 
@@ -52,20 +49,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.160.0-3mdv2011.0
-+ Revision: 658746
-- rebuild for updated spec-helper
-
-* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 1.160.0-2mdv2011.0
-+ Revision: 552187
-- rebuild
-
-* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 1.160.0-1mdv2010.0
-+ Revision: 395252
-- import perl-Digest
-
-
-* Sun Jul 12 2009 cpan2dist 1.16-1mdv
-- initial mdv release, generated with cpan2dist
